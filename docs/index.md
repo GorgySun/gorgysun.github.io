@@ -7,4 +7,4 @@ title: Home
 
 OK nvm it is kinda working, learn more at **[about me](/about/)**, its really bad looking, but it is getting better.
 
-![Best Anime Ever](../assets/giticon.png)
+![Best Anime Ever](/../assets/giticon.png)
