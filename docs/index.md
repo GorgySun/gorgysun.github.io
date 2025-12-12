@@ -5,4 +5,4 @@ title: Home
 
 # Welcome to My GitHub Page! its not working now and i am angry
 
-This is the content of my website. I'm using Jekyll with the `jekyll-theme-minimal` theme.
+OK nvm it is kinda working, learn more at **[about me](/about/)**, its really bad looking, but it is getting better.
