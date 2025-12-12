@@ -13,8 +13,5 @@ permalink: /about/
 <span style="font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif; font-size: 2.5em; background-color: yellow;">[Back to Home](/)</span>
 
 
-<img 
- src="/assets/georgeflag.jpg" 
- alt="George Loves His Country" 
- style="max-width: 500px; height: auto;"
->
+![George Loves His Country](/assets/georgeflag.jpg){: width="500px"}
+
