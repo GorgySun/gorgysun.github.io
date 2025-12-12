@@ -7,4 +7,10 @@ title: Home
 
 OK nvm it is kinda working, learn more at **[about me](/about/)**, its really bad looking, but it is getting better.
 
-![Best Anime Ever](/../assets/giticon.png)
+
+
+<img 
+  src="/../assets/giticon.png" 
+  alt="Best Anime Ever" 
+  style="max-width: 400px; height: auto;"
+>
