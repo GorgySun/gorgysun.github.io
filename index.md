@@ -10,7 +10,7 @@ OK nvm it is kinda working, learn more at **[about me](/about/)**, its really ba
 
 
 <img 
-  src="/../assets/giticon.png" 
-  alt="Best Anime Ever" 
-  style="max-width: 400px; height: auto;"
+ src="/assets/giticon.png" 
+ alt="Best Anime Ever" 
+ style="max-width: 400px; height: auto;"
 >
