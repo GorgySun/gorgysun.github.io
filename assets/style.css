@@ -69,6 +69,83 @@ img {
   background-color: yellow;
 }
 
+/* Prompt list (prompt page) */
+
+.prompt-list {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.prompt-item {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.prompt-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.copy-btn {
+  flex-shrink: 0;
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #f6f8fa;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #eaeef2;
+}
+
+.copy-btn:disabled {
+  cursor: default;
+}
+
+.prompt-title {
+  flex: 1;
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.25rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.prompt-title::after {
+  content: " ▾";
+  color: var(--muted);
+}
+
+.prompt-item.open .prompt-title::after {
+  content: " ▴";
+}
+
+.prompt-body {
+  border-top: 1px solid var(--border);
+  padding: 0.75rem;
+  background: #f6f8fa;
+}
+
+.prompt-body pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
 /* Footer */
 
 .site-footer {
