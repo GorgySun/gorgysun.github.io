@@ -41,7 +41,9 @@
           <button class="prompt-title" type="button" aria-expanded="false">Commit and push</button>
         </div>
         <div class="prompt-body" hidden>
-          <pre>open a new branch for pushing to main that is up to date with remote main. cherrypick all the commit you made in this thread to that branch. do not force push or overwrite any commits by other people, be extra sure about this. make sure the code works on main the same why it works on testing, specifically look for changes in db and web url and routings that are different for testing and main. fix it so that the code work for main before pushing. Also, Yumina practices strict db change before code policy. get the sql code ready for the db change and when actually pushing, make the db change first before the code change.Last, give me a summary of the features and fixes to be addressed in this push in clear bullet points. stage all the files and await my call for pushing.</pre>
+          <pre>
+            open a new branch for pushing to main that is up to date with remote main. cherrypick all the commit you made in this thread to that branch. only include changes made in this specific claude code thread, not changes in made in other threads. do not force push or overwrite any commits by other people, be extra sure about this. make sure the code works on main the same why it works on testing, specifically look for changes in db and web url and routings that are different for testing and main. fix it so that the code work for main before pushing. Also, Yumina practices strict db change before code policy. get the sql code ready for the db change and when actually pushing, make the db change first before the code change.Last, give me a summary of the features and fixes to be addressed in this push in clear bullet points. stage all the files and await my call for pushing.
+          </pre>
         </div>
       </li>
 
