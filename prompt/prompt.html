@@ -59,6 +59,54 @@
         </div>
       </li>
 
+
+      <li class="prompt-item">
+        <div class="prompt-row">
+          <button class="copy-btn" type="button">Copy</button>
+          <button class="prompt-title" type="button" aria-expanded="false">Explain feature and export to .MD</button>
+        </div>
+        <div class="prompt-body" hidden>
+          <pre>
+            Write a markdown doc explaining the features and fixes that was added in this thread
+
+1. Ground it in the code, not memory: read the relevant commits and the current
+
+   state of the files before writing. If the conversation and the code disagree,
+
+   the code wins.
+
+2. Cover, in this order:
+
+   - What it does and the problem it solves (2–3 sentences, plain English)
+
+   - How it works end to end — the flow through the code, with real file paths
+
+     and function names at each step
+
+   - Settings, defaults, and thresholds, and where each lives
+
+   - What changed vs the old behavior, if it replaced or modified something
+
+   - Edge cases and failure modes it handles, plus known gaps
+
+   - How to verify it works (commands to run, what output to expect)
+
+3. If you're unsure whether something is true, check the code; if still unsure,
+
+   mark it as uncertain rather than guessing. No invented behavior.
+
+4. Audience: <a future maintainer who never saw this thread / an end user>.
+
+   It must stand alone — no conversation shorthand, no "as discussed above".
+
+5. Write it to  a md>. Do NOT commit it. Then give me a
+
+   one-paragraph TLDR in chat plus the file path.
+          </pre>
+        </div>
+      </li>
+
+
       <li class="prompt-item">
         <div class="prompt-row">
           <button class="copy-btn" type="button">Copy</button>
@@ -78,6 +126,9 @@
           <pre>Create a new branch off the latest main, give it a short descriptive name based on what I'm building, switch to it, and push it to origin with tracking set up.</pre>
         </div>
       </li>
+
+
+
     </ul>
   </main>
 
