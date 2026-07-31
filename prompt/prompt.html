@@ -31,7 +31,7 @@
           <button class="prompt-title" type="button" aria-expanded="false">Pulling and rebasing</button>
         </div>
         <div class="prompt-body" hidden>
-          <pre>Pull for local main and testing so that local main is up to date with remote main, local testing is up to date with remote testing. solve all the conflicts that you run into. do NOT overlap other's commits, do NOT delete other's changes, make sure all conflicts are solved before moving on. After that, compare the commits on testing and main. merge origin/main into testingso that testing can be added the features that main have and testing do not. add these changes in features and fixes to testing so that testing is up to date with main. after everything is finished, give me a summary of the added features and fixes in clear bullet points </pre>
+          <pre>Pull for local main and testing so that local main is up to date with remote main, the current local branch is up to date with remote branch. solve all the conflicts that you run into. do NOT overlap other's commits, do NOT delete other's changes, make sure all conflicts are solved before moving on. After that, compare the commits on the current branch and main. merge origin/main into the current branch so that the current branch can be added the features that main have but this branch does not. add these changes in features and fixes to this current branch so that the branch is up to date with main. after everything is finished, give me a summary of the added features and fixes in clear bullet points </pre>
         </div>
       </li>
 
@@ -42,7 +42,7 @@
         </div>
         <div class="prompt-body" hidden>
           <pre>
-            open a new branch for pushing to main that is up to date with remote main. cherrypick all the commit you made in this thread to that branch. only include changes made in this specific thread, not changes in made in other threads. do not force push or overwrite any commits by other people, be extra sure about this. make sure the code works on main the same way it works on testing, specifically look for changes in db, web url, and routings that are different for testing and main. fix it so that the code work for main before pushing. Also, I practice strict db change before code policy. get the sql code ready for the db change and, when actually pushing, make the db change first before the code change. Last, give me a summary of the features and fixes to be addressed in this push in clear bullet points. stage all the files and await my call for pushing.
+            open a new branch for pushing to main that is up to date with remote main. cherrypick all the commit you made in this thread to that branch. only include changes made in this specific thread, not changes in made in other threads. do not force push or overwrite any commits by other people, be extra sure about this. make sure the code works on main the same way it works on this current branch, specifically look for changes in db, web url, and routings that may be different for this branch and main. fix it so that the code work for main before pushing. Also, I practice strict db change before code policy. get the sql code ready for the db change and, when actually pushing, make the db change first before the code change. Last, give me a summary of the features and fixes to be addressed in this push in clear bullet points. stage all the files and await my call for pushing.
           </pre>
         </div>
       </li>
@@ -54,7 +54,7 @@
         </div>
         <div class="prompt-body" hidden>
           <pre>
-            merge this branch to main for me, db change before code change as stated before. if encoutnering any conlict or other commits have been pushed, then rebase and solve conflicts before continuing. after everything is done, give me a list of the newly added features, for each feature, explain to me how to test them to make sure they works.
+            merge this branch to main for me, db change before code change as stated before. if you encounter any conlict or other commits have been pushed, then rebase and solve conflicts before continuing. after everything is done, give me a list of the newly added features, for each feature, explain to me how to test them to make sure they works on main.
           </pre>
         </div>
       </li>
